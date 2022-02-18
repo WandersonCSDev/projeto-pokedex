@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+* {
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: rgb(36, 35, 35);
+}
+
+
+/* header */
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #F5DB13;
+    z-index: 1;
+}
+
+header>img {
+    width: 64px;
+}
+
+header>button {
+    background: none;
+    cursor: pointer;
+}
+
+.nav-bar {
+    display: none;
+    font-size: 50px;
+}
+
+.nav-bar>a {
+    font-size: 1.5rem;
+    margin: 0 20px 0 0;
+    text-decoration: none;
+}
+
+
+/* main */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* título */
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    font-family: "karla", sans-serif;
+    color: white;
+    letter-spacing: 6px;
+}
+
+.titulo h1 {
+    font-size: 44px;
+    margin-top: 3%;
+    /* trocar por px */
+}
+
+
+/* linha */
+
+.linha {
+    align-self: center;
+    width: 85%;
+    border-bottom: solid white 1px;
+    margin-top: 5%;
+    /* trocar por px */
+}
+
+
+/* imagem */
+
+.image {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.image img {
+    width: 70%;
+}
+
+
+/* texto */
+
+.text {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.text h2 {
+    font-size: 62px;
+    font-family: "karla", sans-serif;
+    color: white;
+}
+
+.text p {
+    font-family: "Sourxe Sans Pro", sans-serif;
+    font-size: 9px;
+    color: white;
+    letter-spacing: 4px;
+    width: 100%;
+    line-height: 14px;
+    margin-top: 10px;
+}
+
+
+/* atributos */
+
+.load {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.load .p1 {
+    margin: 5px 0 5px 0;
+    display: flex;
+    color: white;
+    font-size: 14px;
+}
+
+.load .p2 {
+    margin: 5px 0 10px 0;
+    display: flex;
+    color: white;
+    font-size: 16px;
+}
+
+.load .atrib {
+    margin-bottom: 10px;
+}
+
+.load-top,
+.load-bottom {
+    display: flex;
+    margin: 0 auto;
+}
+
+.prog {
+    height: 8px;
+    width: 42vw;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.prog-yellow {
+    width: 80%;
+    height: 100%;
+    background: #F5DB13;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.healthy,
+.attack {
+    margin-right: 10px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* XSmall */
+
+@media (max-width: 359px) {
+    .titulo h1 {
+        font-size: 30px;
+    }
+    .text h2 {
+        font-size: 30px;
+    }
+    .prog {
+        height: 5px;
+    }
+    .load .p1 {
+        font-size: 12px;
+    }
+    .load .p2 {
+        font-size: 14px;
+    }
+    .image img {
+        width: 60%;
+    }
+    .i2,
+    .i3,
+    .i4,
+    .i5,
+    .i6 {
+        display: none;
+    }
+}
+
+
+/* HEADER */
+
+@media(min-width: 481px) {
+    header {
+        padding: 20px 10;
+    }
+    header>img {
+        width: 128px;
+    }
+}
+
+
+/* Tablet */
+
+@media (min-width:650px) {
+    header {
+        padding: 20px;
+    }
+    .nav-bar {
+        display: flex;
+    }
+    .hamburguer-menu {
+        display: none;
+    }
+    .titulo {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .titulo h1 {
+        font-size: 72px;
+        margin-top: 15px;
+        margin-left: 25px;
+    }
+    .linha {
+        align-self: flex-start;
+        margin-top: 20px;
+        margin-left: 25px;
+    }
+    .middle-container {
+        display: flex;
+        margin-top: 40px;
+    }
+    /* imagem */
+    .image {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+    .image img {
+        width: 90%;
+        max-height: 363px;
+        max-width: 540px;
+    }
+    .right-container {
+        width: 50%;
+        max-width: 580px;
+    }
+    .text {
+        margin: 0;
+        max-width: 580px;
+    }
+    .load-top,
+    .load-bottom {
+        display: flex;
+        margin: 0;
+        width: 100%;
+    }
+    .atrib {
+        width: 45%;
+    }
+    .prog {
+        height: 8px;
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .titulo h1 {
+        font-size: 32px;
+        margin-top: 5px;
+    }
+    .linha {
+        margin-top: 5px;
+    }
+    .text h2 {
+        font-size: 32px;
+    }
+    .image {
+        margin: 0px;
+        margin-top: -30px;
+    }
+    .image img {
+        width: 50%;
+    }
+    .right-container {
+        position: relative;
+        margin-top: -30px;
+    }
+}
+
+
+/* carrossel */
+
+@media (max-width: 767px) {
+    .i3,
+    .i4,
+    .i5,
+    .i6 {
+        display: none;
+    }
+}
+
+.carrossel {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.carrossel .car {
+    background-color: #F2CB07;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 80px;
+    height: 90px;
+    border-radius: 10px;
+}
+
+.carrossel .car img {
+    width: 95px;
+    height: 80px;
+    position: relative;
+    right: 10px;
+    top: -10px;
+}
+
+.left-arrow,
+.right-arrow {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.car:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.poke-nome {
+    width: 80px;
+    height: 20px;
+    margin-top: -14px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(223, 231, 236);
+}
+
+.poke-nome p {
+    margin-left: 5px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+}
+
+.carrossel .car .poke-nome img {
+    width: 20%;
+    height: 80%;
+    margin-top: 18px;
+    right: 3px;
+    box-shadow: 1px 5px 5px rgb(49, 48, 48);
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 650px) and (max-width: 767px) {
+    .i1,
+    .i2,
+    .i3,
+    .i4 {
+        display: block;
+    }
+}

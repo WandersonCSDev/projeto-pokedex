@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="teste.css">
+    <title>Legendaries</title>
+</head>
+
+<body>
+    <header>
+        <img src="/images/logo.svg" alt="Logo">
+        <button type="button" class="hamburguer-menu"><img src="/images/hamburguer.svg" alt=""></button>
+        <nav class="nav-bar">
+            <a href="#">Home</a>
+            <a href="#">Pokedex</a>
+            <a href="#">Legendaries</a>
+            <a href="#">Documentation</a>
+        </nav>
+    </header>
+    <main>
+        <div class="titulo">
+            <h1>Legendaries</h1>
+        </div>
+        <div class="linha"></div>
+        <section class="middle-container">
+            <div class="image">
+                <img src="/images/mew.svg" alt="Pokemon Mew">
+            </div>
+            <div class="right-container">
+                <div class="text">
+                    <h2>Mew Two</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                        eu, pretium quis, sem. Nulla consequat massa quis enim.
+                </div>
+                <div class="load">
+                    <div class="load-top">
+                        <div class="atrib healthy">
+                            <p class="p1">Healthy Points</p>
+                            <p class="p2">1000,000</p>
+                            <div class="prog">
+                                <div class="prog-yellow"></div>
+                            </div>
+                        </div>
+                        <div class="atrib ">
+                            <p class="p1">Experience</p>
+                            <p class="p2">1000,000</p>
+                            <div class="prog">
+                                <div class="prog-yellow"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="load-bottom">
+                        <div class="atrib attack">
+                            <p class="p1">Attack</p>
+                            <p class="p2">1000,000</p>
+                            <div class="prog">
+                                <div class="prog-yellow"></div>
+                            </div>
+                        </div>
+                        <div class="atrib">
+                            <p class="p1">Defence</p>
+                            <p class="p2">1000,000</p>
+                            <div class="prog">
+                                <div class="prog-yellow"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- carrossel -->
+    <div class="box-carousel">
+        <section class="carousel" aria-label="Gallery">
+            <ol class="carousel__viewport">
+                <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+                    <img src="/images/mew_cr.svg" alt="">
+                    <h2>Mew</h2>
+                    <div class="carousel__snapper">
+                        <a href="#carousel__slide4" class="carousel__prev">to last slade</a>
+                        <a href="#carousel__slide2" class="carousel__next">to next slide</a>
+                    </div>
+                </li>
+                <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+                    <img src="/images/moltres_cr.svg" alt="">
+                    <h2>Moltres</h2>
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide1" class="carousel__prev">to previous slide</a>
+                    <a href="#carousel__slide3" class="carousel__next">to next slide</a>
+                </li>
+                <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+                    <img src="/images/articuno_cr.svg" alt="">
+                    <h2>Articuno</h2>
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide2" class="carousel__prev">to previous slide</a>
+                    <a href="#carousel__slide4" class="carousel__next">to next slide</a>
+                </li>
+                <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+                    <img src="/images/zapdos_cr.svg" alt="">
+                    <h2>Zapdos</h2>
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide3" class="carousel__prev">to previous slide</a>
+                    <a href="#carousel__slide5" class="carousel__next">to first slide</a>
+                </li>
+                <li id="carousel__slide5" tabindex="0" class="carousel__slide">
+                    <img src="/images/diance_cr.svg" alt="">
+                    <h2>Diance</h2>
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide4" class="carousel__prev">to previous slide</a>
+                    <a href="#carousel__slide6" class="carousel__next">to first slide</a>
+                </li>
+                <li id="carousel__slide6" tabindex="0" class="carousel__slide">
+                    <img src="/images/xerneas_cr.svg" alt="">
+                    <h2>Xerneas</h2>
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide5" class="carousel__prev">to previous slide</a>
+                </li>
+            </ol>
+            <aside class="carousel__navigation">
+                <ol class="carousel__navigation-list">
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide1" class="carousel__navigation-button">to slide 1</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide2" class="carousel__navigation-button">to slide 2</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide3" class="carousel__navigation-button">to slide 3</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide4" class="carousel__navigation-button">to slide 4</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide5" class="carousel__navigation-button">to slide 5</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <a href="#carousel__slide6" class="carousel__navigation-button">to slide 6</a>
+                    </li>
+                </ol>
+            </aside>
+        </section>
+    </div>
+
+
+</body>
+
+</html>
