@@ -10,11 +10,18 @@
     "debug": "~2.6.9",
     "ejs": "~2.6.1",
     "express": "~4.16.1",
+<<<<<<< HEAD
     "express-generator": "^4.2.0",
+=======
+>>>>>>> cdcf5ca43d92ed3d052466d7e29f9828e908c2e7
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "nodemon": "^2.0.15"
+=======
+    "nodemon": "^2.0.7"
+>>>>>>> cdcf5ca43d92ed3d052466d7e29f9828e908c2e7
   }
 }

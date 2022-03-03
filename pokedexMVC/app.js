@@ -24,11 +24,16 @@ app.use('/legendaries', LegendariesRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
+<<<<<<< HEAD
     next(createError(404));
+=======
+  next(createError(404));
+>>>>>>> cdcf5ca43d92ed3d052466d7e29f9828e908c2e7
 });
 
 // error handler
 app.use(function(err, req, res, next) {
+<<<<<<< HEAD
     // set locals, only providing error in development
     res.locals.message = err.message;
     res.locals.error = req.app.get('env') === 'development' ? err : {};
@@ -39,3 +44,15 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+=======
+  // set locals, only providing error in development
+  res.locals.message = err.message;
+  res.locals.error = req.app.get('env') === 'development' ? err : {};
+
+  // render the error page
+  res.status(err.status || 500);
+  res.render('error');
+});
+
+module.exports = app;
+>>>>>>> cdcf5ca43d92ed3d052466d7e29f9828e908c2e7

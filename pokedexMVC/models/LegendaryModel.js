@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function LegendaryModel(id, name, description, type,
     healthPoints, specialAttack, defense, attack, experience,
     specialDefense) {
@@ -16,3 +17,13 @@ function LegendaryModel(id, name, description, type,
 module.exports = LegendaryModel;
 
 //TABLE - LEGENDARIES
+=======
+function LegendaryModel(id, name, description, type) {
+  this.id = id;
+  this.name = name;
+  this.description = description;
+  this.type = type;
+}
+
+module.exports = LegendaryModel;
+>>>>>>> cdcf5ca43d92ed3d052466d7e29f9828e908c2e7
