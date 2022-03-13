@@ -4,4 +4,5 @@ const controller = require('../controllers/LegendariesController');
 
 router.get('/', controller.index);
 
-module.exports = router;
+
+module.exports = router

@@ -6,6 +6,7 @@ const logger = require('morgan');
 
 const indexRouter = require('./routes/index');
 const LegendariesRouter = require('./routes/legendaries');
+const LegendariesService = require('./service/LegendariesService');
 
 const app = express();
 
