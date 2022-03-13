@@ -9,11 +9,11 @@ const controller = {
         return res.render('legendaries', {
             legendary
         });
+    },
+    index: (request, response) => {
+        const legendariesList = LegendariesService.listLegendaries()
+        return response.json(legendariesList);
     }
-  index: (request, response) => {
-    const legendariesList = LegendariesService.listLegendaries()
-    return response.json(legendariesList);
-  }
 }
 
 module.exports = controller;
