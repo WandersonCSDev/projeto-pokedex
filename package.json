@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "digitalhouse-pokedex",
   "version": "1.0.0",
   "description": "",
@@ -15,7 +14,6 @@
     "nodemon": "^2.0.15"
   }
 }
-=======
     "name": "digitalhouse-pokedex",
     "version": "1.0.0",
     "description": "",
@@ -31,4 +29,3 @@
         "nodemon": "^2.0.15"
     }
 }
->>>>>>> cdcf5ca43d92ed3d052466d7e29f9828e908c2e7
