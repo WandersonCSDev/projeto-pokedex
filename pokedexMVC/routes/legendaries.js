@@ -1,9 +1,7 @@
 const express = require('express');
 const router = express.Router();
+const controller = require('../controllers/LegendariesController');
 
-/* GET home page. */
-router.get('/legend', function(req, res, next) {
-    res.render('legendaries');
-});
+router.get('/', controller.index);
 
 module.exports = router;
