@@ -6,8 +6,4 @@ router.get('/', function(req, res, next) {
     res.render('index');
 });
 
-router.get('/legends', (req, res, next) => {
-    res.render('legendaries');
-})
-
 module.exports = router;

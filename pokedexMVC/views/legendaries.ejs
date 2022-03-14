@@ -10,9 +10,9 @@
 
 <body>
     <header>
-        <img src="images/logo.svg" alt="Logo" />
+        <img src="/images/logo.svg" alt="Logo" />
         <button type="button" class="hamburguer-menu">
-        <img src="images/hamburguer.svg" alt="Hamburguer Menu" />
+        <img src="/images/hamburguer.svg" alt="Hamburguer Menu" />
     </button>
         <nav class="navbar">
             <a href="#">
@@ -31,65 +31,123 @@
     </header>
     <main class="main-legendaries">
         <h1>Legendaries</h1>
-
-        <%   
-    <div class="legendarie-details">
-      <h2>MewTwo</h2>
-      <p>Description</p>
-    </div>    
-    <div class="legendarie-stats">
-      <div class="progress-bar">
-      <p>Helth Points</p>
-      <p></p>
-    </div>
-      <div  class="progress-bar">
-        <div></div>
-      </div>
-      <div>
-        <p>Attack</p>
-        <p></p>
-        <div  class="progress-bar">
-          <div></div>
-        </div>
-      </div>
-      <div>
-        <p>Special Attack</p>
-        <p></p>
-        <div  class="progress-bar">
-          <div></div>
-        </div>
-      </div>
-      <div>
-        <p>Experience</p>
-        <p></p>
-        <div  class="progress-bar">
-          <div></div>
-        </div>
-      </div>
-      <div>
-        <p>Defense</p>
-        <p></p>
-        <div  class="progress-bar">
-          <div></div>
-        </div>
-      </div>
-      <div>
-        <p>Special Defense</p>
-        <p></p>
-        <div  class="progress-bar">
-          <div></div>
-        </div>
-      </div>
-    </div>
-    %>
-
-            <div class="legendaries-carousel">
-                <img src="" alt="">
+        <div class="legendarie-details">
+            <% if (legendary) { %>
+                <img src="/images/mew.svg" alt="Mew Picture">
                 <div>
-                    <p></p>
-                    <img src="" alt="">
+                    <h2>
+                        <%= legendary.name %>
+                    </h2>
+                    <p>
+                        <%= legendary.description %>
+                    </p>
+                    <div class="legendarie-stats">
+                        <div>
+                            <p>Health Points</p>
+                            <p>
+                                <%= legendary.healthPoints %>
+                            </p>
+                            <div class="progress-bar">
+                                <div></div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Attack</p>
+                            <p>
+                                <%= legendary.attack %>
+                            </p>
+                            <div class="progress-bar">
+                                <div></div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Special Attack</p>
+                            <p>
+                                <%= legendary.specialAttack %>
+                            </p>
+                            <div class="progress-bar">
+                                <div></div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Experience</p>
+                            <p>
+                                <%= legendary.experience %>
+                            </p>
+                            <div class="progress-bar">
+                                <div></div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Defense</p>
+                            <p>
+                                <%= legendary.defense%>
+                            </p>
+                            <div class="progress-bar">
+                                <div></div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Special Defense</p>
+                            <p>
+                                <%= legendary.specialDefense %>
+                            </p>
+                            <div class="progress-bar">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <% } else { %>
+                    <strong>Legendary not found</strong>
+                    <% } %>
+        </div>
+        <div class="legendaries-carousel">
+            <img src="/images/left-arrow.svg" alt="Left Arrow">
+            <div class="carousel-legendarie-box first">
+                <img src="/images/mew.svg" alt="Mew Picture">
+                <div>
+                    <p>Mew</p>
+                    <img src="/images/pokeball.svg" alt="Pokeball">
                 </div>
             </div>
+            <div class="carousel-legendarie-box">
+                <img src="/images/moltres.svg" alt="Moltres Picture">
+                <div>
+                    <p>Moltres</p>
+                    <img src="/images/pokeball.svg" alt="Pokeball">
+                </div>
+            </div>
+            <div class="carousel-legendarie-box">
+                <img src="/images/articuno.svg" alt="Articuno Picture">
+                <div>
+                    <p>Articuno</p>
+                    <img src="/images/pokeball.svg" alt="Pokeball">
+                </div>
+            </div>
+            <div class="carousel-legendarie-box">
+                <img src="/images/zapdos.svg" alt="Zapdos Picture">
+                <div>
+                    <p>Zapdos</p>
+                    <img src="/images/pokeball.svg" alt="Pokeball">
+                </div>
+            </div>
+            <div class="carousel-legendarie-box">
+                <img src="/images/diance.svg" alt="Diance Picture">
+                <div>
+                    <p>Diance</p>
+                    <img src="/images/pokeball.svg" alt="Pokeball">
+                </div>
+            </div>
+            <div class="carousel-legendarie-box">
+                <img src="/images/xerneas.svg" alt="Xerneas Picture">
+                <div>
+                    <p>Xerneas</p>
+                    <img src="/images/pokeball.svg" alt="Pokeball">
+                </div>
+            </div>
+            <img src="/images/right-arrow.svg" alt="Left Arrow">
+        </div>
     </main>
 </body>
 
